@@ -4,6 +4,8 @@ This is a repository containing the sources of an API proxy used for the Apigee 
 
 The proxy is built and deployed using the Apigee Maven Deploy plugin:
 
+test
+
 * [Deploy Plugin](https://github.com/apigee/apigee-deploy-maven-plugin)
 
 The environment and organization configuration is setup using the Apigee Maven config plugin:
@@ -27,9 +29,9 @@ See below a list of the tasks run by the Maven build script:
 
 2. Running static code analysis of the Javascript sources present in the apiproxy/resources/jsc directory using jshint.
 
-3. Installing the required dependencies and running unit tests of the Javascript code used in the policies using Jest. 
+3. Installing the required dependencies and running unit tests of the Javascript code used in the policies using Jest.
 
-3. Copying the apiproxy and config directories to the target directory while replacing the Maven properties in the tokenized files inside those directories. 
+3. Copying the apiproxy and config directories to the target directory while replacing the Maven properties in the tokenized files inside those directories.
 
 4. Updating (or creating if they do not exist already) the following environment entities: cache, key-value map, target server.
 
@@ -84,7 +86,7 @@ Have a look at the Jenkinsfile [here](./Jenkinsfile)
 
         Entities in the environment used for development
 
-        Cache: book-api-jenkins-v1-response-cache in 
+        Cache: book-api-jenkins-v1-response-cache in
         KVM: book-api-jenkins-v1-configuration
         Target Server: library-api-jenkins-v1
 
